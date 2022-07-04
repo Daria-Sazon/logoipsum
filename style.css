@@ -16,7 +16,8 @@ body {
 .header__flex,
 .footer__flex,
 .about,
-.index {
+.index,
+.price__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,6 +133,7 @@ body {
   width: 302px;
   border: 1px solid #7087ff;
   border-radius: 10px;
+  box-sizing: border-box;
   margin-right: 39px;
   padding-left: 14px;
   font-weight: 700;
@@ -140,9 +142,23 @@ body {
   letter-spacing: -0.531474px;
 }
 
-.price {
-  margin: 0;
+.email::placeholder,
+.email {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.531474px;
+  color: #000000;
 }
+
+.email:focus {
+  outline: none;
+}
+
+.price {
+  margin-bottom: 132px;
+}
+
 .price__title {
   font-weight: 700;
   font-size: 60px;
@@ -153,6 +169,69 @@ body {
   margin-bottom: 110px;
 }
 
+.item {
+  width: 330px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  text-align: center;
+  padding: 34px 0 27px;
+}
+
+.item:hover {
+  background: #ff7143;
+  box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+  transition: 300ms;
+}
+
+.item__text {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.562737px;
+  color: #696871;
+}
+
+.item__title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -1.03448px;
+  color: #1d293f;
+  margin: 22px 0 28px;
+}
+
+.item__title span {
+  font-size: 28px;
+}
+
+.item__li {
+  font-size: 17px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: -0.531474px;
+  color: #696871;
+}
+
+.item:hover .item__text,
+.item:hover .item__title,
+.item:hover .item__li {
+  color: white;
+  transition: 350ms;
+}
+
+.btn__li {
+  width: 285px;
+  background: white;
+  color: #5454d4;
+  margin-top: 36px;
+}
+
+.item:hover .btn__li {
+  background: #9f3919;
+  color: white;
+  transition: 350ms;
+}
 .footer {
   padding: 53px 0;
   background: rgba(255, 113, 67, 0.27);
